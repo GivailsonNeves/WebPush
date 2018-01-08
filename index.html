@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Push test</title>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>    
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "<key>",
+            authDomain: "<domain>",
+            databaseURL: "<database>",
+            projectId: "<project>",
+            storageBucket: "<storage>",
+            messagingSenderId: "<sender>"
+        };
+        firebase.initializeApp(config);
+    </script>
+</head>
+<body>
+    <p id="token"></p>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
